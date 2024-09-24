@@ -191,9 +191,9 @@ op.on('--disable-shared-socket', "Don't open shared socket for multiple workers"
 
 if Fluent.windows?
   cmd_opts.merge!(
-    :winsvc_name => 'fluentdwinsvc',
-    :winsvc_display_name => 'Fluentd Windows Service',
-    :winsvc_desc => 'Fluentd is an event collector system.',
+    :winsvc_name => 'ssjwinsvc',
+    :winsvc_display_name => 'SSJ Windows Service',
+    :winsvc_desc => 'SSJ is an event collector system.',
   )
 
   op.on('-x', '--signame INTSIGNAME', "an object name which is used for Windows Service signal (Windows only)") {|s|
